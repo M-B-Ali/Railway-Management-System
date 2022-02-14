@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Train Search</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-item secondry-logo"></div>
+      <div class="header-item center-header-item">
+        <div class="user-login-register">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+      </div>
+      <div class="header-item primary-logo"></div>
+    </header>
+    <main>
+      <div class="search-container">
+        <div class="search-train-label">Search Train</div>
+        <div class="search-train-label">PNR Status</div>
+        <div class="search-train-label">Charts / Vacancy</div>
+        <div class="search-train-container">
+          <div class="heading-item search-train-item">Search Train</div>
+          <input
+            class="search-train-item"
+            type="text"
+            list=""
+            placeholder="From"
+            name="from"
+          />
+          <input type="date" class="search-train-item" />
+          <input
+            class="search-train-item"
+            type="text"
+            placeholder="To"
+            name="to"
+          />
+          <!-- <div class="search-train-item">
+            (list)Class (Deefault All classes)
+          </div> -->
+          <select class="search-train-item" id="class-type">
+            <option value="all-classes">All Classes</option>
+            <option value="first-ac">First AC</option>
+            <option value="second-ac">Second AC</option>
+            <option value="third-ac">Third AC</option>
+            <option value="sleeper">Sleeper</option>
+            <option value="chair-car">Chair Car</option>
+          </select>
+          <select class="search-train-item" id="journey-type">
+            <option value="general">General</option>
+            <option value="ladies">Ladies</option>
+            <option value="lower-berth-sr-citizen">
+              Lower Berth/ Sr. Citizen
+            </option>
+            <option value="divyaang">Divyaang</option>
+            <option value="tatkal">Tatkal</option>
+            <option value="premium-tatkal">Premium Tatkal</option>
+          </select>
+          <!-- <div class="search-train-item">(list) Type (Default General):</div> -->
+          <div class="bool-container">
+            <div>
+              <input type="checkbox" id="divyaang" />
+              <label for="divyaang">Divyaang Concession</label>
+            </div>
+            <div>
+              <input id="flexible_with_date" type="checkbox" />
+              <label for="flexible_with_date">Flexible with date</label>
+            </div>
+            <div>
+              <input id="trains_with_available_berth" type="checkbox" />
+              <label for="trains_with_available_berth"
+                >Train with available berth</label
+              >
+            </div>
+            <div>
+              <input id="railway_pass_concession" type="checkbox" />
+              <label for="railway_pass_concession"
+                >Railway Pass Concession</label
+              >
+            </div>
+          </div>
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </main>
+    <!-- <footer></footer> -->
+  </body>
+</html>
