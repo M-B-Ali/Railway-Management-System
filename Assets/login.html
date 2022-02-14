@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/35ddd468da.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>RAILWAY</title>
+    <link rel="stylesheet" href="login-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="login.js"></script>
+  </head>
+  <body>
+    <div class="rail">
+      <h1 id="heading">WELCOME TO INDIAN RAILWAY</h1>
+      <div class="form">
+        <div class="button">
+          <div id="tbtn"></div>
+          <button type="button" class="btn" onclick="login()">Log In</button>
+          <button type="button" class="btn" onclick="signup()">Sign Up</button>
+        </div>
+        <form id="login" class="input">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <i class="fa fa-key"></i>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="checkbox" />
+          <span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="signup" class="input">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <i class="fa fa-envelope"></i>
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <i class="fa fa-key"></i>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="checkbox" />
+          <span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
