@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="agent-styles.css" />
+    <script src="agent-script.js" defer></script>
+    <title>Train Search</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-item secondry-logo"></div>
+      <div class="header-item center-header-item"></div>
+      <div class="header-item primary-logo"></div>
+    </header>
+    <main>
+      <div class="sidebar"></div>
+      <div class="input-container">
+        <div class="input-heading-item">
+          <h>Station Details</h>
+        </div>
+        <div class="input-form">
+          <div class="input-state-data" id="input-state-data-0">
+            <input
+              class="input-class"
+              type="text"
+              list=""
+              placeholder="State Code"
+              name="state-code"
+            />
+            <input
+              class="input-class"
+              type="text"
+              list=""
+              placeholder="State Name"
+              name="state-name"
+            />
+            <input
+              class="input-class"
+              type="text"
+              list=""
+              placeholder="State"
+              name="state"
+            />
+            <input
+              class="input-class"
+              type="text"
+              list=""
+              placeholder="Zone"
+              name="zone"
+            />
+            <img
+              id="input-state-data-dustbin-0"
+              src="../Images/dustbin.png"
+              onclick="deleteInputStateForm(this.id)"
+            />
+          </div>
+        </div>
+        <div class="add-new-field" onclick="addNewInputStateForm()">
+          <img src="../Images/add-button.png" />
+        </div>
+      </div>
+    </main>
+    <!-- <footer></footer> -->
+  </body>
+</html>

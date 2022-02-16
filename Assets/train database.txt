@@ -1,8 +1,8 @@
 ##Station table
 #attributes->
-state:
 station_code:
 station_name:
+state:
 zone:
 
 
