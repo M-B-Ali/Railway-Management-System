@@ -15,50 +15,145 @@
       <div class="header-item primary-logo"></div>
     </header>
     <main>
-      <div class="sidebar"></div>
+      <div class="sidebar">
+        <ul>
+          <li><a href="./state-input-form.html">Input State Data</a></li>
+          <li><a href="./train-input-form.html">Input Train Data</a></li>
+        </ul>
+      </div>
       <div class="input-container">
         <div class="input-heading-item">
-          <h>Station Details</h>
+          <h>Train Details</h>
         </div>
-        <div class="input-form">
-          <div class="input-state-data" id="input-state-data-0">
+        <div class="input-form-train">
+          <div class="input-train-data">
+            <label for="train-number">Train Number :</label>
             <input
+              id="train-number"
               class="input-class"
               type="text"
               list=""
-              placeholder="State Code"
-              name="state-code"
-            />
-            <input
-              class="input-class"
-              type="text"
-              list=""
-              placeholder="State Name"
-              name="state-name"
-            />
-            <input
-              class="input-class"
-              type="text"
-              list=""
-              placeholder="State"
-              name="state"
-            />
-            <input
-              class="input-class"
-              type="text"
-              list=""
-              placeholder="Zone"
-              name="zone"
-            />
-            <img
-              id="input-state-data-bin-0"
-              src="../Images/dustbin.png"
-              onclick="deleteInputStateForm(this.id)"
+              placeholder="Train No."
+              name="train-number"
             />
           </div>
-        </div>
-        <div class="add-new-field" onclick="addNewInputStateForm()">
-          <img src="../Images/add-button.png" />
+        <div class="input-form-train">
+          <div class="input-train-data">
+            <label for="train-name">Train Name :</label>
+            <input
+              id="train-name"
+              class="input-class"
+              type="text"
+              list=""
+              placeholder="Train Name"
+              name="train-Name"
+            />
+          </div>
+        <div class="input-form-train">
+          <div class="input-train-data">
+            <label for="train-return-number">Return Train Number :</label>
+            <input
+              id="train-return-number"
+              class="input-class"
+              type="text"
+              list=""
+              placeholder="Return Train Number"
+              name="train-return-number"
+            />
+          </div>
+        <div class="input-form-train">
+          <div class="input-train-data">
+            <label >Train Running Days :</label>
+            <div class="days" >
+
+              <label for="day-sunday">Sunday :</label>
+              <input
+              id="day-sunday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Sunday"
+              name="day-sunday"
+              />
+              <label for="day-monday">Monday :</label>
+              <input
+              id="day-monday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Monday"
+              name="day-monday"
+              />
+              <label for="day-tuesday">Tuesday :</label>
+              <input
+              id="day-tuesday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Monday"
+              name="day-tuesday"
+              />
+              <label for="day-wednesday">Wednesday :</label>
+              <input
+              id="day-wednesday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Monday"
+              name="day-wednesday"
+              />
+              <label for="day-thursday">Thursday :</label>
+              <input
+              id="day-thursday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Monday"
+              name="day-thursday"
+              />
+              <label for="day-friday">Friday :</label>
+              <input
+              id="day-friday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Monday"
+              name="day-friday"
+              />
+              <label for="day-saturday">Saturday :</label>
+              <input
+              id="day-saturday"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Monday"
+              name="day-saturday"
+              />
+            </div>
+
+            
+          </div>
+        <div class="input-form-train">
+          <div class="input-train-data">
+            <label for="train-name">Has Pantry? :</label>
+            <input
+              id="train-has-pantry"
+              class="input-class"
+              type="checkbox"
+              value="false"
+              list=""
+              placeholder="Has Pantry?"
+              name="train-has-pantry"
+            />
+          </div>
+        
         </div>
         <button>Submit</button>
       </div>
