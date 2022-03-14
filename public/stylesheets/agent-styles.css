@@ -1,0 +1,123 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #f7f7f7;
+}
+body {
+  background: white;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+}
+
+img {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+header,
+footer {
+  background-color: lightblue;
+  height: 100px;
+  /* color: white; */
+}
+
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  column-gap: 10px;
+  padding: 10px 20px;
+}
+.header-item {
+  background-color: white;
+  /* background-image: url("/images/home-background.jpg"); */
+}
+
+.center-header-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  column-gap: 10px;
+  /* background-color: aliceblue; */
+}
+.agent-login {
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.user-login-register {
+  display: grid;
+  /* flex-direction: row; */
+  padding: 10px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  row-gap: 10px;
+}
+
+.secondry-logo {
+  background-image: url("/images/secondry-logo.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+.primary-logo {
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+main {
+  background-color: rgb(183, 231, 215);
+  background-size: cover;
+  height: 600px;
+  /* padding-top: 50px; */
+  display: grid;
+  grid-template-columns: minmax(300px, 20vw) 1fr;
+}
+.sidebar {
+  background-color: aliceblue;
+}
+.input-container {
+  background-color: bisque;
+  display: flexbox;
+  /* grid-template-rows: 50px; */
+}
+.input-heading-item {
+  background-color: lightskyblue;
+  height: 100px;
+}
+.input-state-data {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr) 0.1fr;
+  grid-template-rows: 40px;
+  gap: 10px;
+  background-color: lightseagreen;
+}
+.input-class {
+  border-radius: 5px;
+}
+
+.add-new-field {
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.input-train-data {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr) 0.1fr;
+  grid-template-rows: 40px;
+  gap: 10px;
+  background-color: lightseagreen;
+}
+
+.days {
+  display: flex;
+  grid-template-columns: repeat(7, 1fr);
+}

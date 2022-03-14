@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/train-timetable-input.css" />
+    <script src="javascripts/train-timetable-input.js" defer></script>
+    <title>Train Search</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-item secondry-logo"></div>
+      <div class="header-item center-header-item"></div>
+      <div class="header-item primary-logo"></div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <ul>
+          <li><a href="station-input.html">Input Staion Data</a></li>
+          <li><a href="train-input.html">Input Train Data</a></li>
+          <li><a href="all-stations.html">Show All Station</a></li>
+          <li>
+            <a href="train-timetable-input.html"
+              >Input Train Time Table Station</a
+            >
+          </li>
+        </ul>
+      </div>
+      <form
+        method="POST"
+        class="input-container"
+        id="train-timetable-form"
+        name="train-timetable-form"
+        onchange="calculateSrNo()"
+      >
+        <div>
+          <label for="train-number">For Train number : </label>
+          <input type="number" id="train-number" name="train-number" required />
+          <hr />
+        </div>
+        <div class="form-input-row-container">
+          <div class="input-container-row">
+            <div class="form-input-row-head">
+              <div class="form-head-child">Sr. No.</div>
+              <div class="form-head-child">Station Code</div>
+              <div class="form-head-child">Arrival Time</div>
+              <div class="form-head-child">Departure time</div>
+              <div class="form-head-child">Day</div>
+              <div class="form-head-child">Platform Number</div>
+              <div class="form-head-child">Distance Traveled</div>
+              <div class="form-head-child">Locomotive Reverse</div>
+            </div>
+            <div class="form-input-row">
+              <input type="number" class="number-input" readonly />
+              <!-- <h id="sr-no">1.</h> -->
+              <input type="text" maxlength="6" name="staion-code" required />
+              <input type="time" name="arrival-time" />
+              <input type="time" name="departure-time" />
+              <input
+                type="number"
+                class="number-input"
+                name="day"
+                max="5"
+                min="0"
+                required
+              />
+              <input
+                type="number"
+                class="number-input"
+                name="platform"
+                min="1"
+              />
+              <input
+                type="number"
+                class="number-input"
+                name="distance-traveled"
+                min="0"
+              />
+              <select name="locomotive-reverse" class="form-input-row">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+              </select>
+              <!-- <input type="text" name="city" list="cityname" />
+              <datalist id="cityname">
+                <option value="Boston"></option>
+                <option value="Cambridge"></option>
+                <option value="NZM">Hazarat Nizamuddin(NZM)</option>
+              </datalist> -->
+
+              <!-- <span>
+                <input type="radio" name="locomotive-reverse" value="1" />
+                <label for="locomotive-reverse">Yes</label>
+                <input
+                  type="radio"
+                  name="locomotive-reverse"
+                  value="0"
+                  checked="checked"
+                />
+                <label for="locomotive-reverse">No</label>
+              </span> -->
+              <img
+                src="/public/images/dustbin.png"
+                onclick="deleteInputFormRow(this)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="add-new-field" onclick="addNewInputFormRow()">
+          <img src="/public/images/add-button.png" />
+        </div>
+        <button type="reset">Reset</button>
+        <button id="submit-btn" type="button" onclick="submitResult();">
+          Submit
+        </button>
+        <!-- <input
+          type="submit"
+          value="Submit"
+          name="submit"
+          onClick="return confirmSubmit()"
+        /> -->
+      </form>
+    </main>
+    <!-- <footer></footer> -->
+  </body>
+</html>

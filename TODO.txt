@@ -1,0 +1,17 @@
+TODO:  Calculate SrNo in train time table input  
+TODO: Inserting NULL values in sql
+
+
+
+TODO: URI for search train https://indiarailinfo.com/trains?date=undefined&drev=undefined&arev=undefined&q=11107 
+TODO : URI : https://etrain.info/list/PASS-TRAINS?page=1 
+
+! https://en.wikipedia.org/wiki/List_of_railway_stations_in_India#cite_note-1
+! https://www.cleartrip.com/trains/stations/list
+
+! https://en.wikipedia.org/wiki/Indian_Railways_Zones_and_Divisions
+! https://icf.indianrailways.gov.in/PB/pass/Zonal.pdf
+
+! https://www.trainman.in/article/indian-railway-train-classes
+
+! https://indianrailwaysfan.com/Types-of-Trains/

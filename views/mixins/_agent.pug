@@ -1,0 +1,22 @@
+mixin agentHeader
+  div(class="header-item secondry-logo")
+  div(class="header-item center-header-item")
+    .home-button
+        a(href="/")
+          button Home
+  div(class="header-item primary-logo")
+
+
+
+mixin agentSidebar
+  .sidebar
+    ul
+      li
+        a(href="/agent/station-input") Input Station Data
+      li
+        a(href="/agent/train-input") Input Train Data
+      li
+        a(href="/agent/all-stations") Show All Station
+      li
+        a(href="/agent/developer-mode") Developer Mode
+

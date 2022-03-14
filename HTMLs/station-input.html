@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="agent-styles.css" />
-    <script src="agent-script.js" defer></script>
+    <link rel="stylesheet" href="stylesheets/agent-styles.css" />
+    <script src="javascripts/agent-script.js" defer></script>
     <title>Train Search</title>
   </head>
   <body>
@@ -17,10 +17,17 @@
     <main>
       <div class="sidebar">
         <ul>
-          <li><a href="./state-input-form.html">Input State Data</a></li>
-          <li><a href="./train-input-form.html">Input Train Data</a></li>
+          <li><a href="station-input.html">Input Staion Data</a></li>
+          <li><a href="train-input.html">Input Train Data</a></li>
+          <li><a href="all-stations.html">Show All Station</a></li>
+          <li>
+            <a href="train-timetable-input.html"
+              >Input Train Time Table Station</a
+            >
+          </li>
         </ul>
       </div>
+      <!-- TODO: Set max length for input -->
       <div class="input-container">
         <div class="input-heading-item">
           <h>Station Details</h>
@@ -57,15 +64,15 @@
             />
             <img
               id="input-state-data-bin-0"
-              src="../Images/dustbin.png"
+              src="/public/images/dustbin.png"
               onclick="deleteInputStateForm(this.id)"
             />
           </div>
         </div>
         <div class="add-new-field" onclick="addNewInputStateForm()">
-          <img src="../Images/add-button.png" />
+          <img src="/public/images/add-button.png" />
         </div>
-        <button>Submit</button>
+        <button id="submit-btn">Submit</button>
       </div>
     </main>
     <!-- <footer></footer> -->

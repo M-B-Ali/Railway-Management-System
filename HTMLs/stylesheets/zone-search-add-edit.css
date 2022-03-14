@@ -1,8 +1,8 @@
 :root {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 html {
   background: #f7f7f7;
@@ -34,7 +34,7 @@ header {
 }
 .header-item {
   background-color: white;
-  /* background-image: url("Assets/Images/home-background.jpg"); */
+  /* background-image: url("/images/home-background.jpg"); */
 }
 
 .center-header-item {
@@ -58,13 +58,13 @@ header {
 }
 
 .secondry-logo {
-  background-image: url("../Images/secondry-logo.png");
+  background-image: url("/public/images/secondry-logo.png");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
 }
 .primary-logo {
-  background-image: url("../Images/logo.png");
+  background-image: url("/public/images/logo.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -81,25 +81,45 @@ main {
 .sidebar {
   background-color: aliceblue;
 }
-.input-container {
+label {
+  padding: 10px 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Add New State CSS */
+.form-input-row-container {
   background-color: bisque;
-  display: flexbox;
-  /* grid-template-rows: 50px; */
+  /* display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 50px;
+  row-gap: 10px; */
+
+  width: 1000px;
+  margin: 0 auto;
 }
-.input-heading-item {
-  background-color: lightskyblue;
-  height: 100px;
-}
-.input-state-data {
+
+.form-input-row-head {
   display: grid;
-  padding: 10px;
-  grid-template-columns: repeat(4, 1fr) 0.1fr;
-  grid-template-rows: 40px;
-  gap: 10px;
-  background-color: lightseagreen;
+  height: 35px;
+  grid-template-columns: 1fr;
+  row-gap: 5px;
 }
-.input-class {
-  border-radius: 5px;
+.form-input-row {
+  display: grid;
+  height: 40px;
+  grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 0.3fr;
+  padding-bottom: 5px;
 }
 
 .add-new-field {
@@ -108,16 +128,20 @@ main {
   width: 25px;
 }
 
-.input-train-data {
-  display: grid;
-  padding: 10px;
-  grid-template-columns: repeat(4, 1fr) 0.1fr;
-  grid-template-rows: 40px;
-  gap: 10px;
-  background-color: lightseagreen;
+/* Search - Edit CSS */
+
+table {
+  margin: 20px auto;
 }
 
-.days {
-  display: flex;
-  grid-template-columns: repeat(7, 1fr);
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+th,
+td {
+  padding: 5px;
 }

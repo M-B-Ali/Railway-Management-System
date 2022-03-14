@@ -1,0 +1,12 @@
+extends layout
+
+include mixins/_agent
+
+block stylesheets
+  link(rel='stylesheet', href='/stylesheets/agent-styles.css')
+
+block headerContent
+  +agentHeader
+
+block mainContent
+  +agentSidebar

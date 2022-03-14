@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/train-input.css" />
+    <script src="javascripts/train-input.js" defer></script>
+    <title>Train Search</title>
+  
+  </head>
+  <body>
+    <header>
+      <div class="header-item secondry-logo"></div>
+      <div class="header-item center-header-item"></div>
+      <div class="header-item primary-logo"></div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <ul>
+          <li><a href="station-input.html">Input Staion Data</a></li>
+          <li><a href="train-input.html">Input Train Data</a></li>
+          <li><a href="all-stations.html">Show All Station</a></li>
+        </ul>
+      </div>
+      <form action="" method="POST" class="input-container">
+        <ul>
+          <li>
+            <label for="train-number">Train number : </label>
+            <input
+              type="number"
+              id="train-number"
+              name="train-number"
+              required
+            />
+          </li>
+          <li>
+            <label for="return-train-number">Return train number : </label>
+            <input
+              type="number"
+              id="return-train-number"
+              name="return-train-number"
+              required
+            />
+          </li>
+          <li>
+            <label for="train-name">Train Name : </label>
+            <input type="text" id="train-name" name="train-name" required />
+          </li>
+          <li>
+            <label>Train Running Days</label>
+            <ol>
+              <li>
+                <!-- <input type="hidden" name="monday" value="false" /> -->
+                <input type="hidden" name="monday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="monday"
+                  id="monday"
+                  value="true"
+                />
+                <input type="hidden" name="monday" value="false" />
+                <label for="monday">Monday</label>
+              </li>
+              <li>
+                <input type="hidden" name="tuesday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="tuesday"
+                  id="tuesday"
+                  value="true"
+                />
+                <input type="hidden" name="tuesday" value="false" />
+                <label for="tuesday">Tuesday</label>
+              </li>
+              <li>
+                <input type="hidden" name="wednesday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="wednesday"
+                  id="wednesday"
+                  value="true"
+                />
+                <input type="hidden" name="wednesday" value="false" />
+                <label for="wednesday">Wednesday</label>
+              </li>
+              <li>
+                <input type="hidden" name="thursday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="thursday"
+                  id="thursday"
+                  value="true"
+                />
+                <input type="hidden" name="thursday" value="false" />
+                <label for="thursday">Thursday</label>
+              </li>
+              <li>
+                <input type="hidden" name="friday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="friday"
+                  id="friday"
+                  value="true"
+                />
+                <input type="hidden" name="friday" value="false" />
+                <label for="friday">Friday</label>
+              </li>
+              <li>
+                <input type="hidden" name="saturday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="saturday"
+                  id="saturday"
+                  value="true"
+                />
+                <input type="hidden" name="saturday" value="false" />
+                <label for="saturday">Saturday</label>
+              </li>
+              <li>
+                <input type="hidden" name="sunday" value="false" />
+                <input
+                  type="checkbox"
+                  checked
+                  name="sunday"
+                  id="sunday"
+                  value="true"
+                />
+                <input type="hidden" name="sunday" value="false" />
+                <label for="sunday">Sunday</label>
+              </li>
+            </ol>
+          </li>
+
+          <li>
+            <label>Has Class types : </label>
+            <ol>
+              <li>
+                <input type="hidden" name="1A" value="false" />
+                <input type="checkbox" name="1A" id="_1A" value="true" />
+                <input type="hidden" name="1A" value="false" />
+                <label for="_1A">First AC (1A)</label>
+              </li>
+              <li>
+                <input type="hidden" name="EA" value="false" />
+                <input type="checkbox" name="EA" id="EA" value="true" />
+                <input type="hidden" name="EA" value="false" />
+                <label for="EA">Executive Anubhuti (EA)</label>
+              </li>
+              <li>
+                <input type="hidden" name="EC" value="false" />
+                <input type="checkbox" name="EC" id="EC" value="true" />
+                <input type="hidden" name="EC" value="false" />
+                <label for="EC">AC Executive Class (EC)</label>
+              </li>
+              <li>
+                <input type="hidden" name="FC" value="false" />
+                <input type="checkbox" name="FC" id="FC" value="true" />
+                <input type="hidden" name="FC" value="false" />
+                <label for="FC">First Class (FC)</label>
+              </li>
+              <li>
+                <input type="hidden" name="2A" value="false" />
+                <input type="checkbox" name="2A" id="2A" value="true" />
+                <input type="hidden" name="2A" value="false" />
+                <label for="2A">Second AC or AC 2-tier (2A)</label>
+              </li>
+              <li>
+                <input type="hidden" name="3A" value="false" />
+                <input type="checkbox" name="3A" id="3A" value="true" />
+                <input type="hidden" name="3A" value="false" />
+                <label for="3A">Third AC or AC 3-tier (3A)</label>
+              </li>
+              <li>
+                <input type="hidden" name="3E" value="false" />
+                <input type="checkbox" name="3E" id="_3E" value="true" />
+                <input type="hidden" name="3E" value="false" />
+                <label for="_3E">Third AC Economy (3E)</label>
+              </li>
+              <li>
+                <input type="hidden" name="CC" value="false" />
+                <input type="checkbox" name="CC" id="CC" value="true" />
+                <input type="hidden" name="CC" value="false" />
+                <label for="CC">AC Chair Car (CC)</label>
+              </li>
+              <li>
+                <input type="hidden" name="SL" value="false" />
+                <input type="checkbox" name="SL" id="SL" value="true" />
+                <input type="hidden" name="SL" value="false" />
+                <label for="SL">Sleeper (SL)</label>
+              </li>
+              <li>
+                <input type="hidden" name="2S" value="false" />
+                <input type="checkbox" name="2S" id="_2S" value="true" />
+                <input type="hidden" name="2S" value="false" />
+                <label for="_2S">Second Seating or 2S:</label>
+              </li>
+              <li>
+                <input type="hidden" name="UR" value="false" />
+                <input type="checkbox" name="UR" id="UR" value="true" />
+                <input type="hidden" name="UR" value="false" />
+                <label for="UR">Unreserved</label>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <label for="has-pantry">Has Pantry :</label>
+            <input type="hidden" name="has-pantry" value="false" />
+            <input
+              type="checkbox"
+              checked
+              name="has-pantry"
+              id="has-pantry"
+              value="true"
+            />
+            <input type="hidden" name="has-pantry" value="false" />
+          </li>
+
+          <li>
+            <label for="train-type">Train Type</label>
+            <!-- <select name="train-type" id="train-type">
+              <option value="Toy Train">Toy Train</option>
+              <option value="Luxury Trains">Luxury Trains</option>
+              <option value="Duronto Express">Duronto Express</option>
+              <option value="Super Fast Train">Super Fast Train</option>
+              <option value="Mail Express Train">Mail Express Train</option>
+              <option value="Rajdhani Express">Rajdhani Express</option>
+              <option value="Shatabdi Express">Shatabdi Express</option>
+              <option value="Jan Shatabdi Express">Jan Shatabdi Express</option>
+              <option value="Antyodaya Express">Antyodaya Express</option>
+              <option value="Humsafar Express">Humsafar Express</option>
+              <option value="Garib Rath Express">Garib Rath Express</option>
+              <option value="Tejas Express">Tejas Express</option>
+              <option value="Mahaparinirvan Express">
+                Mahaparinirvan Express
+              </option>
+              <option value="Vivek Express">Vivek Express</option>
+              <option value="Metro and Monorails ">Metro and Monorails</option>
+            </select> -->
+            <select name="train-type" id="train-type">
+              <option value="0">Select Train Type</option>
+              <option value="0">--------------------</option>
+              <option value="32">Train18</option>
+              <option value="2">Rajdhani</option>
+              <option value="3">Shatabdi</option>
+              <option value="21">Duronto</option>
+              <option value="5">Garib Rath</option>
+              <option value="18">Sampark Kranti</option>
+              <option value="4">Jan Shatabdi</option>
+              <option value="7">AC Express</option>
+              <option value="8">AC SuperFast</option>
+              <option value="26">Suvidha</option>
+              <option value="0">--------------------</option>
+              <option value="27">Humsafar</option>
+              <option value="28">Tejas</option>
+              <option value="29">Uday</option>
+              <option value="30">Antyodaya</option>
+              <option value="0">--------------------</option>
+              <option value="24">SuperFast</option>
+              <option value="6">Mail/Express</option>
+              <option value="9">Special</option>
+              <option value="0">--------------------</option>
+              <option value="11">Passenger</option>
+              <option value="17">Hill Train</option>
+              <option value="12">MEMU</option>
+              <option value="13">DEMU</option>
+              <option value="25">Double Decker</option>
+              <option value="0">--------------------</option>
+              <option value="15">EMU - Delhi</option>
+              <option value="16">Hyderabad Suburban</option>
+              <option value="1">EMU - Chennai</option>
+              <option value="20">EMU - Kolkata</option>
+              <option value="23">EMU - Mumbai</option>
+              <option value="31">EMU - Pune</option>
+            </select>
+          </li>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </ul>
+      </form>
+    </main>
+    <!-- <footer></footer> -->
+  </body>
+</html>
