@@ -49,20 +49,20 @@ header {
 }
 
 .secondry-logo {
-  background-image: url("/images/secondry-logo.png");
+  background-image: url("../public/images/secondry-logo.png");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
 }
 .primary-logo {
-  background-image: url("/images/logo.png");
+  background-image: url("../public/images/logo.png");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
 }
 main {
   /* background-color: rgb(183, 231, 215); */
-  background-image: url("/images/home-background.jpg");
+  background-image: url("../public/images/home-background.jpg");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;

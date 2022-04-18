@@ -26,7 +26,7 @@ var deleteInputStateForm = (id) => {
   abc.parentElement.remove();
 };
 
-const addBtn = document.querySelector("#submit-station-btn");
+const addBtn = document.querySelector("#submit-btn");
 
 addBtn.onclick = function () {
   // console.log("success");
@@ -58,10 +58,10 @@ addBtn.onclick = function () {
         zone: zone.value,
       })
     );
-
     // .then((data) => insertRowIntoTable(data["data"]));
   }
-  fetch("", {
+  console.log(stationObjectArray);
+  fetch("/agent/station-input", {
     headers: {
       "Content-type": "application/json",
     },

@@ -9,7 +9,6 @@ html {
 }
 body {
   background: white;
-  /* max-width: 1000px; */
   margin: 0 auto;
 }
 
@@ -23,7 +22,6 @@ header,
 footer {
   background-color: lightblue;
   height: 100px;
-  /* color: white; */
 }
 
 header {
@@ -58,13 +56,13 @@ header {
 }
 
 .secondry-logo {
-  background-image: url("/images/secondry-logo.png");
+  background-image: url("../public/images/secondry-logo.png");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
 }
 .primary-logo {
-  background-image: url("/images/logo.png");
+  background-image: url("../public/images/logo.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -82,18 +80,35 @@ main {
   background-color: aliceblue;
 }
 
-table {
-  margin: 20px auto;
+.dislpay-data-container {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
 }
 
-table,
-th,
-td {
-  border-collapse: collapse;
-  border: 1px solid #000;
+.station-data-row-head {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 20px;
+  background-color: lightpink;
+  padding: 7px 0;
+  /* border-width: 10px;
+  border-width: 10px; */
+  border: 10px;
+}
+.station-data-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 20px;
+  background-color: lightpink;
+  padding: 7px 0;
+  /* border-width: 10px;
+  border-width: 10px; */
+  border: 10px;
 }
 
-th,
-td {
-  padding: 5px;
+#column-name {
+  text-transform: uppercase;
+  font-weight: 700;
 }
