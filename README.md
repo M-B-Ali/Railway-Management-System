@@ -74,3 +74,21 @@ OR for development server
 ```
 
 Then go to http://localhost:3000/getStarted to Initilize sample data.
+
+## Error
+
+Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<password>';
+
+## Authors
+
+- M Bakhtiyar Ali (20BCS040) [@M-B-Ali](https://github.com/M-B-Ali) 
+- Mohammed Tanveer Hassan (20BME055) (CBCS) [@Tanveer1x4](https://github.com/Tanveer1x4) 
+- Farhan Bin Zobair (20BCS023) [@farhank7](https://github.com/farhank7) 
+-  Hamdan Sarwar (20BEE028) (CBCS) [@Hamdansarwar](https://github.com/Hamdansarwar)
+- Mohd Juned (20BME010) (CBCS) [@ju78832](https://github.com/ju78832) 
+- Md Mozammil (20BEE033) (CBCS) [@MisterMozammil](https://github.com/MisterMozammil) 
+- Mateen Khan (20BCS030)
+- Intisab Ilyas (20BCS076)
+- Intekhab Ilyas (20BCS075)
