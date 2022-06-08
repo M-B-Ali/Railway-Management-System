@@ -85,10 +85,11 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<passwor
 
 - M Bakhtiyar Ali (20BCS040) [@M-B-Ali](https://github.com/M-B-Ali) 
 - Mohammed Tanveer Hassan (20BME055) (CBCS) [@Tanveer1x4](https://github.com/Tanveer1x4) 
-- Mateen Khan (20BCS030) [@MateenKhan02](https://github.com/MateenKhan02)
+- Mateen Khan (20BCS030) [@Mateenkhan02](https://github.com/MateenKhan02)
 - Farhan Bin Zobair (20BCS023) [@farhank7](https://github.com/farhank7) 
 -  Hamdan Sarwar (20BEE028) (CBCS) [@Hamdansarwar](https://github.com/Hamdansarwar)
 - Mohd Juned (20BME010) (CBCS) [@ju78832](https://github.com/ju78832) 
 - Md Mozammil (20BEE033) (CBCS) [@MisterMozammil](https://github.com/MisterMozammil) 
-- Intisab Ilyas (20BCS076)
 - Intekhab Ilyas (20BCS075)
+- Intisab Ilyas (20BCS076)
+
