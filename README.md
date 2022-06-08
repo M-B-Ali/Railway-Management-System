@@ -46,7 +46,7 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://github.com/M-B-Ali/Railway-TimeTable.git
+  git clone https://github.com/M-B-Ali/Railway-Management-System.git
 ```
 
 Go to the project directory
